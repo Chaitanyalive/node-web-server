@@ -54,6 +54,12 @@ app.get('/bad',(req, res) =>{
   });
 })
 
+app.get('/bio', (request, response) => {
+  response.render('bio.hbs',{
+    pageTitle:'Resume'
+  });
+});
+
 app.listen(port,() =>{
   console.log(`Server is up on port:${port}`);
 });
